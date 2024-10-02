@@ -6,7 +6,23 @@ hombres con un nombre posterior a la N y el grupo B por el resto, escribir un pr
 //mujeres de la A a la L = grupo A
 //hombres de la O a la Z = grupo B
 
-let nombre = prompt("Ingrese su nombre");
-let sexo = prompt("Ingrese su sexo");
+    let nombreUsuario = prompt("Ingrese su nombre de usuario");
+    let sexoUsuario = prompt("Ingrese su sexo");
+
+    if(nombreUsuario.charAt(0).toUpperCase() < "M" && sexoUsuario.charAt(0).toUpperCase() === "F")
+        {
+           console.log("pertenece al grupo A");
+           
+        }else if(nombreUsuario.charAt(0).toUpperCase() > "N" && sexoUsuario.charAt(0).toUpperCase() === "M")
+            {
+                console.log("pertenece al grupo A");
+                
+            }else{
+                console.log("pertenece al grupo B");
+                
+            }
+        
+
+        
 
 
