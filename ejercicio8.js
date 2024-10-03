@@ -1,29 +1,28 @@
-/**
- * puntos que se pueden conseguir:
- * 0.0 = "Puntuacion inaceptable" * 2.400
- * 0.4 = "Puntuacion Aceptable" * 2.400
- * 0.6 > + = "Puntuacion meritotio" * 2.400
- */
-let puntuacion = prompt("Ingrese su puntuacion (0.0) (0.4) (0.6)");
-let puntos = parseFloat(puntuacion);
-function valorintermedio(numero) {
-    if(!isNaN(numero) && numero > 0.0 && numero < 0.6){
-        alert("No se aceptan valores intermedio")
+let puntuacion;
+let puntos;
+
+//creamos una funcion para solicitar y validar la puntuacion ingresada
+function obtenerPuntuacion() {
+    puntuacion = prompt("Ingrese su puntuacion (0.0) (0.4) (0.6)");
+    puntos = parseFloat(puntuacion);//convierte el dato ingresado String en float
+
+    while(isNaN(puntos) || (puntos !== 0.0 && puntos !== 0.4 && puntos !== 0.6)){
+        alert("Valor ingresado esta fuera del rango establecido ((0.0),(0.4),(0.3))");
         puntuacion = prompt("Ingrese su puntuacion (0.0) (0.4) (0.6)");
-        return true;
+        puntos = parseFloat(puntuacion)
+
     }
 }
 
+obtenerPuntuacion();
 
-let resultado;
+let resultado = puntos * 2400;
+let rendimiento;
 if(puntos === 0.0){
-    resultado = puntuacion * 2400;
-    alert(`su nivel de rendimiento es Inaceptable y su cantidad de dinero a recibir es ${resultado}`);
+    rendimiento = "Inaceptable"
 }else if(puntos === 0.4){
-    resultado = puntuacion * 2400;
-    alert(`su nivel de rendimiento es Aceptable y su cantidad de dinero a recibir es ${resultado}`);
-}else if(puntos === 0.6){
-    resultado = puntuacion * 2400;
-    alert(`su nivel de rendimiento es Meritorio y su cantidad de dinero a recibir es ${resultado}`);
+    rendimiento = "Aceptable"
+}else if(puntos >= 0.6){
+   rendimiento = "Meritorio"
 }
-
+alert(`Su nivel de rendimiento es ${rendimiento} y su cantidad de dinero a recibir es ${resultado}.`);
