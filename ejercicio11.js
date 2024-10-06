@@ -8,7 +8,13 @@ function operacion(a , b) {
     let suma = a + b;
     let resta = a - b;
     let multiplicacion = a * b;
-    let division = a / b;
+    let division;
+    if(b == 0){
+        alert("No podemos dividir por 0")
+        division = 0;
+    }else{
+        division = a / b;
+    }
 
         // el return devuelve un string que contiene los resultados de las operaciones
     return`

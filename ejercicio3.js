@@ -4,9 +4,11 @@ el divisor es cero el programa debe mostrar un error, se debe manejar mediante
 excepciones y el mensaje debe ser personalizado.
  */
 
+let dividiendo,divisor,resultado;
+
 try {
-let diviendo = prompt("Ingrese el diviendo");
-let divisor = prompt("Ingrese el divisor");
+dividiendo = prompt("Ingrese el diviendo");
+divisor = prompt("Ingrese el divisor");
 function dividir( a , b) {
     let resultado = a / b;
     return resultado;

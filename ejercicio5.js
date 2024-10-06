@@ -5,11 +5,16 @@ usuario su edad e ingresos mensuales y muestre por pantalla si el usuario debe t
 no
  */
 
-let años = prompt("Ingrese su edad");
-let ingresos = prompt("Ingrese sus ingresos mensuales");
+let años = parseInt(prompt("Ingrese su edad"));
+let ingresos = parseFloat(prompt("Ingrese sus ingresos mensuales"));
 
 function accion(){
-    if(años > 16 && ingresos >= 1000) alert("debe tributar");
-    else alert("No debe tributar")
+    if(edad < 0 || ingresos < 0){
+        alert("Valores invalidos")
+    }else{
+        if(años > 16 && ingresos >= 1000) alert("debe tributar");
+        else alert("No debe tributar")
+    }
+    
 }
 accion();

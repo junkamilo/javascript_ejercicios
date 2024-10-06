@@ -9,5 +9,5 @@ let resultado = numero % 2;
 while(resultado < 0){
     alert("No se aceptan valores negativos");
     numero = prompt("Ingrese un numero entero");
-}if(resultado == 0) alert("El numero es par");
-    else if(resultado != 0) alert("El numero es impar")
+}if(resultado === 0) alert("El numero es par");
+    else alert("El numero es impar")

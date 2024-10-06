@@ -7,11 +7,11 @@ hombres con un nombre posterior a la N y el grupo B por el resto, escribir un pr
 //hombres de la O a la Z = grupo B
 
     let nombreUsuario = prompt("Ingrese su nombre de usuario");
-    let sexoUsuario = prompt("Ingrese su sexo");
+    let sexoUsuario = prompt("Ingrese su sexo(F para femenino y M para masculino)").toUpperCase();
 
-    if(nombreUsuario.charAt(0).toUpperCase() < "M" && sexoUsuario.charAt(0).toUpperCase() === "F")
+    /*if(nombreUsuario.charAt(0).toUpperCase() < "M" && sexoUsuario.charAt(0).toUpperCase() === "F")
         {
-           console.log("pertenece al grupo A");
+           
            
         }else if(nombreUsuario.charAt(0).toUpperCase() > "N" && sexoUsuario.charAt(0).toUpperCase() === "M")
             {
@@ -20,7 +20,15 @@ hombres con un nombre posterior a la N y el grupo B por el resto, escribir un pr
             }else{
                 console.log("pertenece al grupo B");
                 
-            }
+            }*/
+    //mejorado
+    let grupo;
+    if((sexoUsuario === "F" && nombreUsuario.toUpperCase() < "M") || (sexo === "M" && nombreUsuario.toUpperCase() > n)){
+        grupo = "Grupo A"
+    }else{
+        grupo = "Grupo B"
+    }
+    alert(grupo);
         
 
         
