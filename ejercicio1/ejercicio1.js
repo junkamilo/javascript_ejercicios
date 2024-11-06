@@ -13,6 +13,9 @@ menor de edad, el programa debe validar que solo se puedan ingresar números pos
     edad = Number(edad);
 
     if(edad >= 18) alert("Eres mayor de edad");
-    else alert("Eres menor de edad");
+     else alert("Eres menor de edad");
  }
- usuario();
+  usuario();
+
+
+
