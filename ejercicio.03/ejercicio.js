@@ -1,12 +1,10 @@
-let palabra = prompt("Ingrese una palabra: ");
-
-function Larga_corta(palabra) {
-    let pal = palabra.length;
-    if (pal > 5) {
-        alert(`Su palabra ${palabra} es larga ya que contiene mas de 5  caracteres`);
-    }else if(pal < 5){
-        alert(`Su palabra ${palabra} es corta ya que contiene menos de 5 caracteres`);
+let numero1 = parseFloat(prompt("Ingrese el primer numero: "));
+let numero2 = parseFloat(prompt("Ingrese el segundo numero: "));
+function mayor(numero1,numero2) {
+    if (numero1 > numero2) {
+        alert(`El primer numero ${numero1} es mayor que el segundo numero ${numero2}`);
+    }else{
+        alert(`El segundo numero ${numero2} es mayor que el primer numero ${numero1}`);
     }
 }
-
-Larga_corta(palabra);
+mayor(numero1,numero2);

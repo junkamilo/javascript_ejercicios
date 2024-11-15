@@ -1,4 +1,4 @@
-let numero1 = parseFloat(prompt("Ingrese le primero numero: "));
+let numero1 = parseFloat(prompt("Ingrese el primero numero: "));
 let numero2 = parseFloat(prompt("Ingrese el segundo numero: "));
 
 function mayor(A , B) {
