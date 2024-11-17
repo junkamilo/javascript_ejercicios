@@ -1,8 +1,6 @@
-let palabra = prompt("Ingrese la palabra");
+let palabra = prompt("Ingrese una palabra para mostrarla de forma inversa");
 
-function invertir(pal) {
-    let invertir = pal.split('').reverse().join('');
-    console.log(invertir);
-    
+let inversa = (pal)=>{
+    return pal.split("").reverse().join("");
 }
-invertir(palabra);
+console.log(`${inversa(palabra)}`);
