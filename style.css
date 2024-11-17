@@ -39,7 +39,14 @@ a{
     font-family: fantasy;
     font-size: 20px;
 }
-hr{
-    border: 1px solid black;
-    width: 100%;
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+h2:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    text-decoration: underline;
 }
